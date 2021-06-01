@@ -1,0 +1,19 @@
+#
+# JDBC properties
+#
+rdbms=
+hostname=
+port=
+schema=
+username=
+password=
+
+spring.datasource.url=jdbc:${rdbms}://${hostname}:${port}/${schema} 
+spring.datasource.username=${username}
+spring.datasource.password=${password}
+
+
+#spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+#solved datetime problem (uknown field)
+spring.jpa.properties.hibernate.hbm2ddl.auto : update
